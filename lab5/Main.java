@@ -83,7 +83,7 @@ abstract class Coffee {
 
 /**
  * Клас, що описує каву в зернах.
- * Зазвичай має більший об'єм упаковки (мішки).
+ * Зазвичай має більший об'єм упаковки.
  */
 class CoffeeBeans extends Coffee {
     public CoffeeBeans(String name, double price, double weight, double volume, int quality) {
@@ -115,7 +115,7 @@ class InstantCoffee extends Coffee {
 }
 
 // ==========================================
-// 3. КЛАС-КОНТЕЙНЕР (VAN)
+// 3. КЛАС-КОНТЕЙНЕР
 // ==========================================
 
 /**
@@ -147,7 +147,7 @@ class Van {
      * Намагається завантажити товар у фургон.
      * Перевіряє, чи не перевищено обсяг та бюджет.
      *
-     * @param coffee Об'єкт товару (кави).
+     * @param coffee Об'єкт товару.
      * @throws VanCapacityExceededException Якщо товар не влазить фізично.
      * @throws BudgetExceededException      Якщо на товар не вистачає грошей.
      */
@@ -177,8 +177,8 @@ class Van {
     /**
      * Знаходить товари, які відповідають заданому діапазону якості.
      *
-     * @param minQuality Мінімальна якість (включно).
-     * @param maxQuality Максимальна якість (включно).
+     * @param minQuality Мінімальна якість.
+     * @param maxQuality Максимальна якість.
      * @return Список знайдених товарів.
      */
     public List<Coffee> findByQualityRange(int minQuality, int maxQuality) {
@@ -215,7 +215,7 @@ class Van {
 // ==========================================
 
 /**
- * Головний клас для демонстрації роботи програми (Lab 5, Variant 11).
+ * Головний клас для демонстрації роботи програми 
  */
 public class Main {
     public static void main(String[] args) {
